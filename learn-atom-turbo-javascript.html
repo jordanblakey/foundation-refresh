@@ -1,0 +1,444 @@
+// CTRL-; end current line with semicolon.
+// CTRL-, end current line with a comma.
+// CTRL-B easy code blocks.
+
+
+// DECLARATIONS
+
+// v⇥ | Variable statement
+var ${1:name}
+
+// v=⇥ | Variable assignment
+var ${1:name} == ${2:value};
+
+// l⇥ | Let statement
+let ${1:name} == ${2:value};
+
+// l=⇥ | Let assignment
+let ${1:name} == ${2:value};
+
+
+// FLOW CONTROL
+
+// if⇥ | If statement
+if (${1:condition}) {
+    ${0}
+};
+
+// el⇥ | Else statements
+else {
+    ${0}
+}
+
+// ife⇥ | If else statement
+if (${1:condition}) {
+    ${0}
+} else {
+    ${0}
+}
+
+// ei⇥ | Else if statement
+else if (${1:condition}) {
+    ${0}
+}
+
+// fl⇥ | For loop
+for (let i = 0, len = iterable.length; i < len; i++) {
+
+}
+
+// fo⇥ | for of loop
+for (let key of source) {
+
+}
+
+// wl⇥ | while loop
+while (condition) {
+
+}
+
+// tc⇥ | try/catch
+try {
+
+} catch (err) {
+
+}
+
+// tf⇥ | try/finally
+try {
+
+} finally {
+
+}
+
+// tcf⇥ | try/catch/finally
+try {
+
+} catch (err) {
+
+} finally {
+
+}
+
+// sw⇥ | switch charset
+switch (expr) {
+    case value:
+        return ;
+    default:
+        return;
+}
+
+// FUNCTIONS
+
+//  f⇥  | anonymous function
+function () {
+
+}
+
+// fn⇥ |  | named function
+function name(arguments) {
+
+}
+
+// iife⇥  | immediately invoked function expression
+(function() {
+    'use strict';
+
+}());
+
+// fa⇥  | function apply
+fn.apply(this, arguments)
+
+// fc⇥  | function call
+fn.call(this, arguments)
+
+// fb⇥  | function bind
+fn.bind(this, arguments)
+
+// af⇥  | arrow function
+(arguments) => statement
+
+// afb⇥  | arrow function with body
+(arguments) => {
+
+}
+
+// gf⇥  | generator function
+function* (arguments) {
+
+}
+
+// gfn⇥  | named generator function
+function* name(arguments) {
+
+}
+
+// ITERABLES
+
+// seq⇥  | sequence of 0..n
+[...Array(length).keys()]
+
+// fe⇥  | forEach loop (chainable)
+iterable.forEach((item) => {
+
+});
+
+// map⇥  | map function (chainable)
+iterable.map((item) => {
+
+});
+
+// reduce⇥  | reduce function (chainable)
+iterable.reduce((previous, current) => {
+
+}, initial);
+
+// filter⇥  | filter function (chainable)
+iterable.filter((item) => {
+
+});
+
+// find⇥  | ES6 find function
+iterable.find((item) => {
+
+});
+
+
+// OBJECTS AND CLASSES
+
+// c⇥  | class (ES6)
+class name {
+    constructor(arguments) {
+
+    }
+}
+
+// cex⇥  | child class (ES6)
+class name extends base {
+    constructor(arguments) {
+        super(arguments);
+
+    }
+}
+
+// ctor⇥  | class constructor (ES6)
+constructor(arguments) {
+    super(arguments);
+}
+
+// :⇥  | key/value pair
+key: 'value'
+
+// m⇥  | method (ES6 syntax)
+method(arguments) {
+
+}
+
+// get⇥  | getter (ES6 syntax)
+getElementsByClassName('className')
+
+// set⇥  | setter (ES6 syntax)
+set property(value) {
+
+}
+
+// gs⇥  | getter and setter (ES6 syntax)
+get property() {
+
+}
+set property(value) {
+
+}
+
+// proto⇥  | prototype method (chainable)
+ClassName.prototype.methodName = function () {
+
+};
+
+// a⇥  | Object assign
+Object.assign(dest, source)
+
+// ac⇥  | Object assign cogy (shallow clone)
+Object.assign({}, original, source)
+
+// r⇥  | return
+return ;
+
+// rth⇥  | return this
+return this;
+
+// rn⇥  | return null
+return null;
+
+// rt⇥  | return true
+return true;
+
+// rf⇥  | return false
+return false;
+
+// r0⇥  | return 0
+return 0;
+
+// r-1⇥  | return -1
+return -1;
+
+// rp⇥  | return Promise (ES6)
+return new Promise((resolve, reject) => {
+
+});
+
+// rc⇥  | return complex value (such as JSX components)
+return (
+
+);
+
+// S⇥  | String
+String
+
+// N⇥  | Number
+Number
+
+// O⇥  | Object
+Object
+
+// A⇥  | Array
+Array
+
+// D⇥  | Date
+Date
+
+// Rx⇥  | RegExp
+RegExp
+
+// tof⇥  | instanceof comparison
+typeof source === 'undefined'
+
+// iof⇥  |
+source instanceof Object
+
+
+// PROMISES
+
+// p⇥  | new Promise (ES6)
+new Promise((resolve, reject) => {
+
+})
+
+// then⇥  | Promise.then (chainable)
+promise.then(value => {
+
+});
+
+// catch⇥  | Promise.catch (chainable)
+promise.catch(err => {
+
+});
+
+
+// ES6 MODULES
+
+// ex⇥  | module export
+export member;
+
+// exd⇥  | module default
+export default member;
+
+// im⇥  | module import
+import * from 'module';
+
+// ima⇥  | module import as
+import * from 'module';
+
+
+// BDD TESTING
+
+
+// desc⇥  | describle
+describe('description', function () {
+
+});
+
+// cont⇥  | context
+context('description', function () {
+
+});
+
+// it⇥  | synchronous "it"
+it('description', function () {
+
+});
+
+// ita⇥  | asynchronous "it"
+it('description', function (done) {
+
+    done();
+});
+
+// bf⇥  | before test suite
+before(function () {
+
+});
+
+// bfe⇥  | before each test
+beforeEach(function () {
+
+});
+
+// aft⇥  | after test suite
+after(function () {
+
+});
+
+// afe⇥  | aft each test
+afterEach(function () {
+
+});
+
+
+// CONSOLE
+
+// cl⇥  | console.log
+console.log()
+
+// ce⇥  | console.error
+console.error()
+
+// cw⇥  | console.warn
+console.warn()
+
+
+// TIMERS
+
+// st⇥  | setTimeout
+setTimeout(() => {
+
+}, delay);
+
+// si⇥  | setInterval
+setInterval(() => {
+
+}, delay);
+
+// sim⇥  | setImmediate
+setImmediate(() => {
+
+});
+
+
+// DOM SPECIFICS
+
+// ae⇥  | addEventListener
+document.addEventListener('event', ev => {
+
+});
+
+// gi⇥  | getElementById
+document.getElementById('id')
+
+// gc⇥  | getElementsByClassName
+Array.from(document.getElementsByClassName('class'))
+
+// gt⇥  | getElementsByTagName
+Array.from(document.getElementsByTagName('tag'))
+
+// qs⇥  | querySelector
+querySelector('query')
+
+// qsa⇥  | querySelectorAll
+querySelectorAll('query')
+
+
+// NODEJS SPECIFICS
+
+// cb⇥  | Node.js style callback
+function (err, value) {}
+
+// re⇥  | Require a module
+require('module')
+
+// em⇥  | export member
+exports.member = value;
+
+// me⇥  | module exports
+module.exports = name;
+
+// on⇥  | attach an event handler
+emitter.on('event', (arguments) => {
+
+});
+
+// xm⇥  | Express middleware
+function (req, res, next) {
+
+}
+
+// xerr⇥  | Express error handler
+function (err, req, res, next) {
+
+}
+
+
+// MISCELLANEOUS
+
+// us⇥  | Use strict
+'use strict';
